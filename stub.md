@@ -32,7 +32,11 @@ temperature: 0
 
 
 
+
+
 ```stub
-A node app with a ping API that returns back a fixed string
+
 ```
+
+
 
