@@ -44,3 +44,49 @@ temperature: 0
 A node app with a ping API that returns back a fixed string
 ```
 
+<details open id="425f8a47d14c507acbdda1fe1fb56ce3">
+<summary></summary>
+
+First, we need to initialize a new Node.js project. This will create a `package.json` file in the current directory which will keep track of all the dependencies for our project.
+
+```bash
+npm init -y
+```
+
+Next, we need to install Express.js, a web application framework for Node.js. We will use it to create our API.
+
+```bash
+npm install express
+```
+
+Now, let's create a new file `app.js` in the root directory of our project. This file will contain the code for our API.
+
+```javascript
+// app.js
+
+const express = require('express');
+const app = express();
+const port = process.env.PORT || 3000;
+
+app.get('/ping', (req, res) => {
+  res.send('pong');
+});
+
+app.listen(port, () => {
+  console.log(`Server running on http://localhost:${port}`);
+});
+```
+
+In this file, we first import the `express` module and create an instance of an Express application. We then define a route handler for GET requests made to the `/ping` path. This handler sends back the string 'pong'. Finally, we tell our application to listen for requests on a specific port.
+
+To run our application, we can use the `node` command followed by the name of the file we want to run.
+
+```bash
+node app.js
+```
+
+Now, if you navigate to `http://localhost:3000/ping` in your web browser, you should see the string 'pong'.
+</details>
+
+
+
