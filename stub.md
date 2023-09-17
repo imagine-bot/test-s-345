@@ -34,9 +34,7 @@ temperature: 0
 
 
 
-```stub
 
-```
 
 
 
