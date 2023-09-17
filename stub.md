@@ -24,7 +24,11 @@ temperature: 0
 ### Create your prompts below and Stub will generate the code and documentation
 
 
+
+
 ```stub
-Create a readme.md
+A node app with a ping API that returns back a fixed string
 ```
+
+
 
